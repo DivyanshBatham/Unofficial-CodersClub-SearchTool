@@ -1,0 +1,135 @@
+body {
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+.logo-container {
+  background: #FDAA90;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-container #logo-svg {
+  margin: 20px;
+}
+
+.logo-action {
+  color: #2e2e2e;
+  font-size: 25px;
+  text-align: center;
+}
+
+.selector {
+  width: 60%;
+}
+
+.selector__menu-list {
+  height: 26vh;
+}
+
+.selector__option--is-selected {
+  background-color: rgb(253, 170, 144) !important;
+}
+
+.selector__option--is-focused:not(.selector__option--is-selected) {
+  background-color: rgb(252, 131, 101, 0.2) !important;
+}
+
+
+.card-container {
+  margin: 5vh 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+
+.card {
+  /* background: blue; */
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+}
+
+.cardImageContainer {
+  /* background-color: red; */
+  width: 100%;
+  height: 220px;
+  /* padding-top: 100%;  */
+  /* position: relative; */
+}
+
+.cardImageContainer img {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.cardInfoContainer {
+  height: 300px;
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  /* background: wheat; */
+  background: #fafafa;
+  /* transition: 1s; This times everything the changes */
+  transition: 0.3s ease-out;
+}
+
+.card.active .cardInfoContainer {
+  transform: translateY(-220px);
+}
+
+/* .cardInfoContainer:hover {
+  transform: translateY(-220px);
+} */
+
+.btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.cardTitle {
+  font-size: 22px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.cardDescription {
+  font-size: 14px;
+  margin: 0px -2px;
+}
+
+.card.active .cardDescription {
+  overflow-y: auto;
+  height: 240px;
+}
+
+.skillWrapper {
+  display: inline;
+  background: #E6E6E6;
+  padding: 3px;
+  border-radius: 2px;
+  margin: 2px;
+}
+
+.card.active .skillWrapper {
+  display: inline-block;
+}
+
+/* .svgWrapper {
+  width: 30px;
+  display: inline-block;
+  margin-right: 5px;
+} */

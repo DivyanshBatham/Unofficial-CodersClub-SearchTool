@@ -10,6 +10,7 @@ class App extends Component {
       cards: [
         { id: 0, name: "Divyansh Batham", skills: ['React.js', 'Node.js', 'Angular', 'JavaScript', 'HTML', 'CSS', 'C'], isActive: false },
         // { id: 1, name: "Your Name", skills: ['skill1', 'skill2'], isActive: false }, [CONTRIBUTE]
+        { id: 1, name: "Nishchal Raj", skills: ['None'], isActive: false },
       ],
       options: [
         { value: 'C', label: 'C' },

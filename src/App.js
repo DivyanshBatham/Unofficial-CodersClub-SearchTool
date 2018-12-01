@@ -8,9 +8,10 @@ class App extends Component {
     super(props);
     this.state = {
       cards: [
-        { id: 0, name: "Divyansh Batham", skills: ['React.js', 'Node.js', 'Angular', 'JavaScript', 'HTML', 'CSS', 'C'], isActive: false },
-        // { id: 1, name: "Your Name", skills: ['skill1', 'skill2'], isActive: false }, [CONTRIBUTE]
-        { id: 1, name: "Nishchal Raj", skills: ['None'], isActive: false },
+        // CONTRIBUTE HERE:
+        { id: 0, name: "Divyansh Batham", skills: ['React.js', 'Node.js', 'Javascript', 'HTML', 'CSS'], imgSrc: 'https://avatars1.githubusercontent.com/u/12484697?s=460&v=4', isActive: false },
+        { id: 1, name: "Nishchal Raj", skills: ['Python', 'Android', 'Javascript'], imgSrc: 'https://avatars2.githubusercontent.com/u/15857220?s=460&v=4', isActive: false },
+        // { id: <Increment id>, name: "<Your Name>", skills: ['<Skill 1>', '<Skill 2>'], imgSrc: '<Path to your Image>', isActive: false },
       ],
       options: [
         { value: 'C', label: 'C' },
@@ -20,11 +21,10 @@ class App extends Component {
         { value: 'R', label: 'R' },
         { value: 'C#', label: 'C#' },
         { value: 'PHP', label: 'PHP' },
-        { value: 'JavaScript', label: 'JavaScript' },
+        { value: 'Javascript', label: 'Javascript' },
         { value: 'Ruby', label: 'Ruby' },
         { value: 'Go', label: 'Go' },
         { value: 'Swift', label: 'Swift' },
-        { value: '9', label: '9' },
         { value: 'Assembly', label: 'Assembly' },
         { value: 'Matlab', label: 'Matlab' },
         { value: 'Scala', label: 'Scala' },
@@ -75,7 +75,6 @@ class App extends Component {
     this.setState({
       cards: oldCards
     })
-
   }
 
   createCard = (card) => {
@@ -83,7 +82,7 @@ class App extends Component {
       <div className={card.isActive ? "card active" : "card"} key={card.id} >
         <div className="cardImageContainer">
           {/* <img src="https://via.placeholder.com/300x220" alt="Product" className="productImage" /> */}
-          <img src="https://avatars1.githubusercontent.com/u/12484697?s=460&v=4" alt="Product" className="productImage" />
+          <img src={card.imgSrc} alt={card.name} />
         </div>
         <div className="cardInfoContainer">
           <div className="cardTitle">
@@ -198,12 +197,12 @@ class App extends Component {
 
 
   render() {
-  
+
     return (
       <div>
         <div className="logo-container">
           < this.logoGenerator />
-          <p className="logo-action">Join the club by adding your contribution to <a href="https://github.com/DivyanshBatham/Geek-O-Sphere" target="_blank" rel="noopener noreferrer">Github</a></p>
+          <p className="logo-action">Join the club by adding your contribution to <a href="https://github.com/DivyanshBatham/Unofficial-CodersClub-SearchTool" target="_blank" rel="noopener noreferrer">Github</a></p>
 
           <Select
             isMulti
@@ -217,7 +216,7 @@ class App extends Component {
         <div className="card-container">
 
           < this.cardList />
-          
+
         </div>
       </div>
     );

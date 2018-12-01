@@ -18,8 +18,12 @@ body {
 
 .logo-action {
   color: #2e2e2e;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
+}
+
+.logo-action a {
+  color: #F4734B;
 }
 
 .selector {

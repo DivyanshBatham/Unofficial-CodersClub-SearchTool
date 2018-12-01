@@ -14,56 +14,10 @@ class App extends Component {
         // { id: <Increment id>, name: "<Your Name>", skills: ['<Skill 1>', '<Skill 2>'], imgSrc: '<Path to your Image>', isActive: false },
       ],
       options: [
-        { value: 'C', label: 'C' },
-        { value: 'Java', label: 'Java' },
-        { value: 'Python', label: 'Python' },
-        { value: 'C++', label: 'C++' },
-        { value: 'R', label: 'R' },
-        { value: 'C#', label: 'C#' },
-        { value: 'PHP', label: 'PHP' },
-        { value: 'Javascript', label: 'Javascript' },
-        { value: 'Ruby', label: 'Ruby' },
-        { value: 'Go', label: 'Go' },
-        { value: 'Swift', label: 'Swift' },
-        { value: 'Assembly', label: 'Assembly' },
-        { value: 'Matlab', label: 'Matlab' },
-        { value: 'Scala', label: 'Scala' },
-        { value: 'HTML', label: 'HTML' },
-        { value: 'Perl', label: 'Perl' },
-        { value: 'Visual Basic', label: 'Visual Basic' },
-        { value: 'Shell', label: 'Shell' },
-        { value: 'Objective-C', label: 'Objective-C' },
-        { value: 'Cuda', label: 'Cuda' },
-        { value: 'Lua', label: 'Lua' },
-        { value: 'Processing', label: 'Processing' },
-        { value: 'SQL', label: 'SQL' },
-        { value: 'Haskell', label: 'Haskell' },
-        { value: 'Rust', label: 'Rust' },
-        { value: 'Fortran', label: 'Fortran' },
-        { value: 'Delphi', label: 'Delphi' },
-        { value: 'D', label: 'D' },
-        { value: 'LabView', label: 'LabView' },
-        { value: 'VHDL', label: 'VHDL' },
-        { value: 'Lisp', label: 'Lisp' },
-        { value: 'Julia', label: 'Julia' },
-        { value: 'Ladder Logic', label: 'Ladder Logic' },
-        { value: 'Erlang', label: 'Erlang' },
-        { value: 'Verilog', label: 'Verilog' },
-        { value: 'Prolog', label: 'Prolog' },
-        { value: 'Clojure', label: 'Clojure' },
-        { value: 'SAS', label: 'SAS' },
-        { value: 'Ada', label: 'Ada' },
-        { value: 'Cobol', label: 'Cobol' },
-        { value: 'ABAP', label: 'ABAP' },
-        { value: 'Scheme', label: 'Scheme' },
-        { value: 'J', label: 'J' },
-        { value: 'TCL', label: 'TCL' },
-        { value: 'Ocaml', label: 'Ocaml' },
-        { value: 'Forth', label: 'Forth' },
-        { value: 'Actionscript', label: 'Actionscript' },
+        // Calculate according to skills
       ],
       selectedOptions: [
-
+        // For filtering
       ],
     };
   }
@@ -195,6 +149,15 @@ class App extends Component {
     });
   }
 
+  componentDidMount() {
+    const skills = this.state.cards.reduce((a, b) => [...a.skills , ...b.skills]).sort().filter((skill, index, self) => self.indexOf(skill) === index);
+    const options = skills.map(skill => {
+      return { 'value': skill, 'label': skill }
+    });
+    this.setState({
+      options: options
+    });
+  }
 
   render() {
 

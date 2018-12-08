@@ -176,6 +176,7 @@ class App extends Component {
             options={this.state.options}
             className="selector"
             classNamePrefix="selector"
+            placeholder="Need help with something? Find the member with the relevant skill(s)"
             onChange={this.onChange}
           />
         </div>

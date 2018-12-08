@@ -12,6 +12,7 @@ class App extends Component {
         { id: 0, name: "Divyansh Batham", skills: ['React.js', 'Node.js', 'Javascript', 'HTML', 'CSS'], imgSrc: 'https://avatars1.githubusercontent.com/u/12484697?s=460&v=4', isActive: false },
         { id: 1, name: "Nishchal Raj", skills: ['Python', 'Android', 'Javascript'], imgSrc: 'https://avatars2.githubusercontent.com/u/15857220?s=460&v=4', isActive: false },
         { id: 3, name: "Sumit Mishra", skills: ['C++', 'Android', 'Java', 'Python'], imgSrc: 'https://avatars2.githubusercontent.com/u/30742922?s=400&u=ab5d607e634b7e2ebc9b4b75ba609d00d9b10590&v=4', isActive: false },
+        { id: 2, name: "Abhishek Anand", skills: ['C++','C','Python','Data Structures','Competitive Coding'], imgsrc: 'https://avatars3.githubusercontent.com/u/38378778?s=400&u=fde76370012524606227b706027d98a58b4ba8f7&v=4',isActive: false },
         // { id: <Increment id>, name: "<Your Name>", skills: ['<Skill 1>', '<Skill 2>'], imgSrc: '<Path to your Image>', isActive: false },
       ],
       options: [

@@ -15,6 +15,7 @@ class App extends Component {
         { id: 3, name: "Abhishek Anand", skills: ['C++', 'C', 'Python', 'Data Structures', 'Competitive Coding'], imgSrc: 'https://avatars3.githubusercontent.com/u/38378778?s=460&v=4', isActive: false },
         { id: 4, name: "Sourav Patidar", skills: ['C++', 'Java', 'Competitive Coding', 'Android'], imgSrc: 'https://avatars2.githubusercontent.com/u/41509968?s=400&u=a2b2aeac1dde5010863be45c2860da85974ccaf9&v=4', isActive: false },
         { id: 5, name: "Prakhar Sharan", skills: ['C++', 'Java', 'Competitive Coding'], imgSrc: 'https://avatars0.githubusercontent.com/u/35136020?s=400&u=2427c8cc2351d6512e679067aa0268d752a44b88&v=4', isActive: false },
+        { id: 6, name: "Ritik Saini" ,skills: ['c++','c','Competitive Coding '], imgSrc : 'https://www.imgsrc.com/image/linpQ', isActive :false},
         // { id: <Increment id>, name: "<Your Name>", skills: ['<Skill 1>', '<Skill 2>'], imgSrc: '<Path to your Image>', isActive: false },
       ],
       options: [

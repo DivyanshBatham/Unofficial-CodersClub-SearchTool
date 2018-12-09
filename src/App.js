@@ -12,7 +12,7 @@ class App extends Component {
         { id: 0, name: "Divyansh Batham", skills: ['React.js', 'Node.js', 'Javascript', 'HTML', 'CSS', 'Competitive Coding'], imgSrc: 'https://avatars1.githubusercontent.com/u/12484697?s=460&v=4', isActive: false },
         { id: 1, name: "Nishchal Raj", skills: ['Python', 'Android', 'Javascript'], imgSrc: 'https://avatars2.githubusercontent.com/u/15857220?s=460&v=4', isActive: false },
         { id: 2, name: "Sumit Mishra", skills: ['C++', 'Android', 'Java', 'Python'], imgSrc: 'https://avatars2.githubusercontent.com/u/30742922?s=400&u=ab5d607e634b7e2ebc9b4b75ba609d00d9b10590&v=4', isActive: false },
-        { id: 3, name: "Abhishek Anand", skills: ['C++', 'C', 'Python', 'Data Structures', 'Competitive Coding'], imgsrc: 'https://avatars3.githubusercontent.com/u/38378778?s=460&v=4', isActive: false },
+        { id: 3, name: "Abhishek Anand", skills: ['C++', 'C', 'Python', 'Data Structures', 'Competitive Coding'], imgSrc: 'https://avatars3.githubusercontent.com/u/38378778?s=460&v=4', isActive: false },
         { id: 4, name: "Sourav Patidar", skills: ['C++', 'Java', 'Competitive Coding', 'Android'], imgSrc: 'https://avatars2.githubusercontent.com/u/41509968?s=400&u=a2b2aeac1dde5010863be45c2860da85974ccaf9&v=4', isActive: false },
         { id: 5, name: "Prakhar Sharan", skills: ['C++', 'Java', 'Competitive Coding'], imgSrc: 'https://avatars0.githubusercontent.com/u/35136020?s=400&u=2427c8cc2351d6512e679067aa0268d752a44b88&v=4', isActive: false },
         // { id: <Increment id>, name: "<Your Name>", skills: ['<Skill 1>', '<Skill 2>'], imgSrc: '<Path to your Image>', isActive: false },

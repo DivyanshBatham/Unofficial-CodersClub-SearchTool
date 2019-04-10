@@ -15,7 +15,7 @@ class App extends Component {
         { id: 3, name: "Abhishek Anand", skills: ['C++', 'C', 'Python', 'Data Structures', 'Competitive Coding'], imgSrc: 'https://avatars3.githubusercontent.com/u/38378778?s=460&v=4', isActive: false },
         { id: 4, name: "Sourav Patidar", skills: ['C++', 'Java', 'Competitive Coding', 'Android'], imgSrc: 'https://avatars2.githubusercontent.com/u/41509968?s=400&u=a2b2aeac1dde5010863be45c2860da85974ccaf9&v=4', isActive: false },
         { id: 5, name: "Prakhar Sharan", skills: ['C++', 'Java', 'Competitive Coding'], imgSrc: 'https://avatars0.githubusercontent.com/u/35136020?s=400&u=2427c8cc2351d6512e679067aa0268d752a44b88&v=4', isActive: false },
-        { id: 6, name: "Ritik Saini" , skills: ['C++','C','Competitive Coding '], imgSrc : 'https://www.imgsrc.com/image/linpQ', isActive :false},
+        { id: 6, name: "Ritik Saini" , skills: ['C++','C','Competitive Coding'], imgSrc : 'https://www.imgsrc.com/images/2018/12/09/00100sPORTRAIT_00100_BURST20180923174247517_COVER.jpg', isActive :false},
         { id: 7, name: "Abhishek Kumar", skills: ['C', 'C++','Python','DS','Blockchain','Tensor Flow'], imgSrc: 'https://avatars1.githubusercontent.com/u/35439414?s=400&u=c9a044e78f1bb2d95b4651b9e3770c09815bdb5e&v=4', isActive: false },
         { id: 8, name: "Atul Anand", skills: ['C','C++', 'Java', 'Android','Python','Dart','Arduino'], imgSrc: 'https://avatars0.githubusercontent.com/u/35136020?s=400&u=2427c8cc2351d6512e679067aa0268d752a44b88&v=4', isActive: false },
         { id: 9, name: "Mrudul Sankhere", skills: ['Competitive Coding', 'C', 'C++', 'Python'], imgSrc: 'https://avatars0.githubusercontent.com/u/32437824?s=460&v=4', isActive:false},
